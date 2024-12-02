@@ -18,7 +18,7 @@ void Solve()
 	for (int i = 1 ; i <= M ; ++i)
 	{
 		int sub_ans = 1000000000;
-		if (a[i] == 1)
+		if (a[i] == 1 && b[i] != 0)
 		{
 			cout << 1 << " ";
 			continue ;
@@ -32,7 +32,6 @@ void Solve()
 		{
 			// binary
 			int l = 1, r = b[i];
-			int tmp = 0;
 			sub_ans = 1000000000;
 			while (l <= r)
 			{
